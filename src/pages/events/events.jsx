@@ -77,7 +77,6 @@ const Events = () => {
                   <div className="mt-8">
                     <h2 className="text-2xl font-bold mb-4">Contact</h2>
                     <p>{event.contact}</p>
-                    <p>{event.rules}  </p>
                   </div>
                 </div>
               </div>

@@ -10,11 +10,13 @@ const About = () => {
 
 			{aboutData.map((dataItem) => {
 				return (
-					<Fragment key={dataItem.title}>
-						<NavAbout current={dataItem.title} />
-						<Desc content={dataItem.content} />
-					</Fragment>
-				)
+          <Fragment key={dataItem.title}>
+            <section id={dataItem.title.toLowerCase().replace(/ /g, "-")}>
+              <NavAbout current={dataItem.title} />
+              <Desc content={dataItem.content} />
+            </section>
+          </Fragment>
+        );
 			})}
 		</main>
 	)
@@ -38,7 +40,7 @@ const aboutData = [
       "Our mission is to inspire and mobilize the local community to take action for a sustainable and greener future. We strive to educate individuals on environmental issues and engage them in practical conservation efforts. Our mission is rooted in the belief that everyone has a role to play in protecting the environment. We aim to provide the knowledge and resources needed for individuals to make informed decisions and adopt sustainable practices. Through our various programs and initiatives, we address critical environmental challenges such as pollution, deforestation, and climate change. We work closely with schools, community groups, and local businesses to promote environmental awareness and encourage participation in our activities. Our mission also involves advocating for policies and practices that support sustainability at the local, regional, and national levels. We believe that by fostering a sense of responsibility and empowerment, we can drive meaningful change and create a lasting impact. Our mission is not just about addressing current environmental issues but also about building a foundation for a sustainable future. We are committed to continuous learning and adaptation, ensuring that our efforts remain relevant and effective in the face of evolving environmental challenges.",
   },
   {
-    title: "Philosphy of Change",
+    title: "Philosophy of Change",
     content:
       "We believe in the power of collective action and the importance of involving all segments of society in the environmental movement. Our philosophy is rooted in the principle that real change comes from within the community. We emphasize the importance of grassroots initiatives and the role of individuals in driving sustainable development. By fostering a sense of responsibility and empowerment, we aim to create a culture of environmental stewardship. Our approach involves engaging with diverse groups, including schools, local businesses, and government bodies, to build a broad coalition for change. We believe that education is a critical component of our philosophy, and we strive to provide accessible and relevant information on environmental issues. Through workshops, seminars, and community events, we aim to raise awareness and inspire action. Our philosophy also includes a focus on practical solutions and innovative approaches to conservation. We encourage the adoption of sustainable practices in everyday life and support initiatives that promote renewable energy, waste reduction, and resource conservation. By working together and leveraging the strengths of different sectors, we believe that we can create a significant and lasting impact. Our philosophy of change is a call to action for everyone to take part in building a sustainable future.",
   },
